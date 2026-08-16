@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atlas Listing",
+  "type": "object",
+  "required": ["listing_id", "atlas_id", "marketplace", "marketplace_item_id", "url"],
+  "properties": {
+    "listing_id": {"type": "string", "pattern": "^ATL-L-[0-9]{6}$"},
+    "atlas_id": {"type": "string", "pattern": "^ATL-[0-9]{6}$"},
+    "marketplace": {"enum": ["weidian", "taobao", "1688", "other"]},
+    "marketplace_item_id": {"type": "string", "minLength": 1},
+    "url": {"type": "string", "format": "uri"},
+    "seller_id": {"type": ["string", "null"], "pattern": "^ATL-S-[0-9]{5}$"},
+    "seller_name": {"type": ["string", "null"]},
+    "price_cny": {"type": ["number", "null"], "exclusiveMinimum": 0},
+    "price_observed_at": {"type": ["string", "null"], "format": "date"},
+    "listing_health": {"enum": ["active", "unknown", "dead", "redirected", "out_of_stock", "archived", null]},
+    "last_verified_at": {"type": ["string", "null"], "format": "date"},
+    "replacement_listing_id": {"type": ["string", "null"], "pattern": "^ATL-L-[0-9]{6}$"},
+    "qc_front_url": {"type": ["string", "null"]},
+    "jadeship_url": {"type": ["string", "null"]},
+    "reddit_search_url": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,11 @@
+atlas_id,brand,product_name,category,subcategory,state,recommendation_labels,quality_score,confidence_score,consensus_level,evidence_conflict,reason_to_buy,reason_not_to_buy,known_unknowns
+ATL-000001,Yeezy,Double-Layer Perfect Hoodie,Apparel,Hoodie,under_review,,,,,,,,Exact frontal QC and current seller/price required
+ATL-000002,Ralph Lauren,Full-Zip Cotton Hoodie,Apparel,Zip Hoodie,under_review,,,,,,,,Exact frontal QC and seller/store verification required
+ATL-000003,,12-Color Crewneck Sweatshirt,Apparel,Crewneck,under_review,,,,,,,,High QC volume alone is not approval evidence
+ATL-000004,Burberry,Zip-Up Hoodie,Apparel,Zip Hoodie,candidate,,,,,,,,Low recorded sales relative to QC pool
+ATL-000005,Represent,Hoodie,Apparel,Hoodie,candidate,,,,,,,,Limited evidence
+ATL-000006,,Two-Sided Fabric Zip Hoodie,Apparel,Zip Hoodie,under_review,,,,,,,,Exact image provenance required
+ATL-000007,,Yin-Yang Hoodie,Apparel,Hoodie,candidate,,,,,,,,Newer listing; more evidence needed
+ATL-000008,,Camo Pullover Hoodie,Apparel,Hoodie,candidate,,,,,,,,Very limited purchase evidence
+ATL-000009,,Classic-Fit Zip Sweatshirt 9626,Apparel,Zip Sweatshirt,under_review,,,,,,,,Recent sales; identity/QC verification needed
+ATL-000010,The North Face,Sara Shop TNF-style Hoodie,Apparel,Hoodie,candidate,,,,,,,,User-provided listing; no independent approval yet

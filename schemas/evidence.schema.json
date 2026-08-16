@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atlas Evidence",
+  "type": "object",
+  "required": ["evidence_id", "atlas_id", "evidence_type", "source_url", "summary"],
+  "properties": {
+    "evidence_id": {"type": "string", "pattern": "^ATL-E-[0-9]{6}$"},
+    "atlas_id": {"type": "string", "pattern": "^ATL-[0-9]{6}$"},
+    "listing_id": {"type": ["string", "null"], "pattern": "^ATL-L-[0-9]{6}$"},
+    "evidence_type": {"enum": ["warehouse_qc", "in_hand", "measurement", "weight", "reddit", "jadeship", "comparison", "spreadsheet", "seller_claim", "marketplace", "other"]},
+    "source_url": {"type": "string", "format": "uri"},
+    "observed_at": {"type": ["string", "null"], "format": "date"},
+    "polarity": {"enum": ["positive", "negative", "neutral", "mixed", "unknown", null]},
+    "summary": {"type": "string", "minLength": 1},
+    "independence": {"enum": ["independent", "partially_independent", "seller_controlled", "unknown", null]},
+    "exact_match": {"enum": [true, false, "unknown", null]},
+    "notes": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}
