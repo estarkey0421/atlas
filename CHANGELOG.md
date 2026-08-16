@@ -5,10 +5,11 @@
 ### Added
 - Evidence and seller CSV stores
 - Cross-file integrity validation and approval gates
-- Unit tests and GitHub Actions validation
+- Unit tests and reproducible validation commands
 - Formula-driven visual hoodie research workbook
 - Research Queue with P1/P2/P3 prioritization
 - Reproducible `make validate`, `make test`, and `make release` workflow
+- GitHub Actions validation workflow prepared locally (publishing requires workflow-enabled GitHub credentials)
 
 ### Changed
 - Product and listing CSVs now expose the full documented v0.2 fields
