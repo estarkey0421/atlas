@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atlas Seller",
+  "type": "object",
+  "required": ["seller_id", "name"],
+  "properties": {
+    "seller_id": {"type": "string", "pattern": "^ATL-S-[0-9]{5}$"},
+    "name": {"type": "string", "minLength": 1},
+    "storefront_url": {"type": ["string", "null"]},
+    "specialties": {"type": ["string", "null"]},
+    "known_issues": {"type": ["string", "null"]},
+    "return_notes": {"type": ["string", "null"]},
+    "notes": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}
