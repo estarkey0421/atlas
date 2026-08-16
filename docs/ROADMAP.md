@@ -24,7 +24,7 @@ Target: 25–40 approved records, no filler.
 - [x] Canonical CSV columns aligned with data dictionary
 - [x] Evidence and seller tables added
 - [x] Strict integrity validator with research-completeness warnings
-- [x] CI validation workflow
+- [ ] CI validation workflow (prepared locally; publishing requires GitHub workflow scope)
 - [x] Formula-driven visual research workbook and priority queue
 - [ ] Resolve Expedition 1 P1 listing identity/seller/price/QC gaps
 - [ ] Promote first evidence-complete hoodie records
